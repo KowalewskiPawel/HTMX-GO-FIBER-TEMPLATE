@@ -13,5 +13,14 @@ func main() {
 		return c.Render("index", fiber.Map{})
 	})
 
+	// app.Get("/search", func(c *fiber.Ctx) error {
+	// 	ticker := c.Query("ticker")
+	// 	results := SearchTicker(ticker)
+
+	// 	return c.Render("results", fiber.Map{
+	// 		"Results": results,
+	// 	})
+	// })
+
 	app.Listen(":3000")
 }
